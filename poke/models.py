@@ -14,8 +14,8 @@ class UserManager(models.Manager):
 class User(models.Model):
     name = models.CharField(max_length=100)
     alias = models.CharField(max_length=50)
-    email = models.EmailField(max_length=50)
-    password = models.CharField(max_length=50)
+    email = models.EmailField(max_length=100)
+    password = models.CharField(max_length=100)
     birth_date = models.DateTimeField()
     objects = UserManager()
 
